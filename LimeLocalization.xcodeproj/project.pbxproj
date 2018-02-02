@@ -100,6 +100,7 @@
 				BF08C247202470CA00EC2529 /* Frameworks */,
 			);
 			sourceTree = "<group>";
+			usesTabs = 0;
 		};
 		BF08C20C202464B600EC2529 /* Products */ = {
 			isa = PBXGroup;

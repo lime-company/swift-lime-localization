@@ -18,47 +18,47 @@ import Foundation
 
 /// The Localizable protocol defines interface for semi-automatic localizations.
 public protocol Localizable: class {
-	
-	/// Called after the language change
-	func didChangeLanguage()
-	
-	/// Called when the localized strings needs to be applied to components.
-	/// Typically, after the LocalizationHelper.attach() and after the language change.
-	func updateLocalizedStrings()
+    
+    /// Called after the language change
+    func didChangeLanguage()
+    
+    /// Called when the localized strings needs to be applied to components.
+    /// Typically, after the LocalizationHelper.attach() and after the language change.
+    func updateLocalizedStrings()
 }
 
 /// A LocalizationHelper class helps with automatic localization in view controllers (or any object
 /// which needs update its localized strings). You can use instance of this class to apply localized
 /// strings to Localizable target object or when the language is changed in the application.
 public class LocalizationHelper {
-	
-	/// Internal weak reference to Localizable target object
-	private(set) weak var targetForLocalization: Localizable?
-	
-	/// Object constructor
-	public init() {
-		// Register for notifications about language change
-		NotificationCenter.default.addObserver(forName: LocalizationProvider.didChangeLanguage, object: nil, queue: .main) { (notification) in
-			self.didChangeLanguage(notification: notification)
-		}
-	}
-	
-	deinit {
-		// Remove observer from NotificationCenter
-		NotificationCenter.default.removeObserver(self)
-	}
-	
-	/// Attach a Localizable object to the helper. The method automatically calls `target.updateLocalizedStrings()`
-	public func attach(target: Localizable) {
-		targetForLocalization = target
-		target.updateLocalizedStrings()
-	}
-	
-	/// A notification handling.
-	private func didChangeLanguage(notification: Notification) {
-		if let target = targetForLocalization {
-			target.didChangeLanguage()
-			target.updateLocalizedStrings()
-		}
-	}
+    
+    /// Internal weak reference to Localizable target object
+    private(set) weak var targetForLocalization: Localizable?
+    
+    /// Object constructor
+    public init() {
+        // Register for notifications about language change
+        NotificationCenter.default.addObserver(forName: LocalizationProvider.didChangeLanguage, object: nil, queue: .main) { (notification) in
+            self.didChangeLanguage(notification: notification)
+        }
+    }
+    
+    deinit {
+        // Remove observer from NotificationCenter
+        NotificationCenter.default.removeObserver(self)
+    }
+    
+    /// Attach a Localizable object to the helper. The method automatically calls `target.updateLocalizedStrings()`
+    public func attach(target: Localizable) {
+        targetForLocalization = target
+        target.updateLocalizedStrings()
+    }
+    
+    /// A notification handling.
+    private func didChangeLanguage(notification: Notification) {
+        if let target = targetForLocalization {
+            target.didChangeLanguage()
+            target.updateLocalizedStrings()
+        }
+    }
 }

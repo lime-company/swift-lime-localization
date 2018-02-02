@@ -19,21 +19,21 @@ import Foundation
 /// The LocalizationTable describes one localization string table (for any language) stored in
 /// one specific bundle.
 public class LocalizationTable {
-	
-	/// A table name. Typically, this is file name without a ".strings" extension. For example "Localizable"
-	public let name: String
-	
-	/// A bundle where the localization file is stored
-	public let bundle: Bundle
-	
-	/// Constructor for creation table entry with exact table name and (optional) bundle.
-	public init(_ name: String, _ bundle: Bundle = Bundle.main) {
-		self.name = name
-		self.bundle = bundle
-	}
-	
-	/// Returns object representing default string table in main bundle.
-	public static func defaultTable() -> LocalizationTable {
-		return LocalizationTable("Localizable")
-	}
+    
+    /// A table name. Typically, this is file name without a ".strings" extension. For example "Localizable"
+    public let name: String
+    
+    /// A bundle where the localization file is stored
+    public let bundle: Bundle
+    
+    /// Constructor for creation table entry with exact table name and (optional) bundle.
+    public init(_ name: String, _ bundle: Bundle = Bundle.main) {
+        self.name = name
+        self.bundle = bundle
+    }
+    
+    /// Returns object representing default string table in main bundle.
+    public static func defaultTable() -> LocalizationTable {
+        return LocalizationTable("Localizable")
+    }
 }
