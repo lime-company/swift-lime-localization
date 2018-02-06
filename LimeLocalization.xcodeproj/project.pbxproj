@@ -56,8 +56,8 @@
 
 /* Begin PBXFileReference section */
 		BF08C20B202464B600EC2529 /* LimeLocalization.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LimeLocalization.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		BF08C217202467D100EC2529 /* LimeLocalization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LimeLocalization.h; path = LimeLocalization/LimeLocalization.h; sourceTree = "<group>"; };
-		BF08C218202467D100EC2529 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = LimeLocalization/Info.plist; sourceTree = "<group>"; };
+		BF08C217202467D100EC2529 /* LimeLocalization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LimeLocalization.h; path = Source/LimeLocalization.h; sourceTree = "<group>"; };
+		BF08C218202467D100EC2529 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = Source/Info.plist; sourceTree = "<group>"; };
 		BF08C21B2024680F00EC2529 /* LimeLocalization.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LimeLocalization.podspec; sourceTree = "<group>"; };
 		BF08C21D2024681800EC2529 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		BF08C2242024685C00EC2529 /* LimeLocalization.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LimeLocalization.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -68,6 +68,8 @@
 		BF08C23A20246FE800EC2529 /* LimeCore.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = LimeCore.xcodeproj; path = "Carthage/Checkouts/swift-lime-core/LimeCore.xcodeproj"; sourceTree = "<group>"; };
 		BF08C24C2024752100EC2529 /* LocalizationTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizationTable.swift; sourceTree = "<group>"; };
 		BF08C24F202478D400EC2529 /* String+Localization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Localization.swift"; sourceTree = "<group>"; usesTabs = 0; };
+		BF0946C52029FC65002F76A6 /* LimeLocalization.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = LimeLocalization.podspec; sourceTree = "<group>"; };
+		BF0946C62029FCA5002F76A6 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +116,7 @@
 		BF08C216202467B100EC2529 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				BF0946C42029FC65002F76A6 /* Deploy */,
 				BF08C21D2024681800EC2529 /* README.md */,
 				BF08C23420246CC900EC2529 /* Cartfile */,
 				BF08C21B2024680F00EC2529 /* LimeLocalization.podspec */,
@@ -157,6 +160,15 @@
 			children = (
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BF0946C42029FC65002F76A6 /* Deploy */ = {
+			isa = PBXGroup;
+			children = (
+				BF0946C62029FCA5002F76A6 /* Info.plist */,
+				BF0946C52029FC65002F76A6 /* LimeLocalization.podspec */,
+			);
+			path = Deploy;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -462,7 +474,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = LimeLocalization/Info.plist;
+				INFOPLIST_FILE = Source/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = io.getlime.lib.LimeLocalization;
@@ -483,7 +495,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = LimeLocalization/Info.plist;
+				INFOPLIST_FILE = Source/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = io.getlime.lib.LimeLocalization;
@@ -505,7 +517,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = LimeLocalization/Info.plist;
+				INFOPLIST_FILE = Source/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = io.getlime.lib.LimeLocalization;
@@ -529,7 +541,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = LimeLocalization/Info.plist;
+				INFOPLIST_FILE = Source/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = io.getlime.lib.LimeLocalization;
