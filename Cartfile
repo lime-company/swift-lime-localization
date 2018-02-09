@@ -1,1 +1,2 @@
 github "lime-company/swift-lime-core" ~> 0.9
+github "lime-company/swift-lime-config" ~> 0.9

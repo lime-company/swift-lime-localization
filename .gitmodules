@@ -1,3 +1,6 @@
 [submodule "Carthage/Checkouts/swift-lime-core"]
 	path = Carthage/Checkouts/swift-lime-core
 	url = https://github.com/lime-company/swift-lime-core.git
+[submodule "Carthage/Checkouts/swift-lime-config"]
+	path = Carthage/Checkouts/swift-lime-config
+	url = https://github.com/lime-company/swift-lime-config.git

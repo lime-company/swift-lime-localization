@@ -16,6 +16,7 @@
 
 import Foundation
 import LimeCore
+import LimeConfig
 
 internal typealias D = LimeDebug
 
@@ -31,7 +32,7 @@ public class LocalizationProvider {
     public static let didChangeLanguage = Notification.Name(rawValue: "LocalizationProvider_didChangeLanguage")
     
     /// LocalizationProvider's singleton
-    public static let shared = LocalizationProvider(configuration: LocalizationConfiguration.sharedConfiguration())
+    public static let shared = LocalizationProvider(configuration: LimeConfig.shared.localization)
     
     /// Thread synchronization object
     fileprivate let lock = Lock()
@@ -77,7 +78,7 @@ public class LocalizationProvider {
     /// Returns current localization configuration
     public var configuration: LocalizationConfiguration {
         return lock.synchronized {
-            return LocalizationConfiguration(copyFrom: privateConfiguration)
+            return self.privateConfiguration
         }
     }
     fileprivate var privateConfiguration: LocalizationConfiguration
@@ -98,7 +99,7 @@ public class LocalizationProvider {
     
     /// Private constructor
     public init(configuration: LocalizationConfiguration) {
-        self.privateConfiguration = LocalizationConfiguration(copyFrom: configuration)
+        self.privateConfiguration = configuration
         let fireMessage = self.applyConfiguration(config: self.privateConfiguration)
         if fireMessage {
             reportChange()

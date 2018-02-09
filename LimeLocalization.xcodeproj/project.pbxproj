@@ -15,42 +15,42 @@
 		BF08C23620246CD200EC2529 /* LocalizationConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF08C23220246AE300EC2529 /* LocalizationConfiguration.swift */; };
 		BF08C23720246CD200EC2529 /* LocalizationProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF08C22F20246A6200EC2529 /* LocalizationProvider.swift */; };
 		BF08C23820246CD200EC2529 /* LocalizationHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF08C22E20246A6200EC2529 /* LocalizationHelper.swift */; };
-		BF08C24A2024732F00EC2529 /* LimeCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF08C24020246FE800EC2529 /* LimeCore.framework */; };
-		BF08C24B2024736F00EC2529 /* LimeCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF08C24220246FE800EC2529 /* LimeCore.framework */; };
 		BF08C24D2024752100EC2529 /* LocalizationTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF08C24C2024752100EC2529 /* LocalizationTable.swift */; };
 		BF08C24E202475A500EC2529 /* LocalizationTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF08C24C2024752100EC2529 /* LocalizationTable.swift */; };
 		BF08C250202478D400EC2529 /* String+Localization.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF08C24F202478D400EC2529 /* String+Localization.swift */; };
 		BF08C251202478D400EC2529 /* String+Localization.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF08C24F202478D400EC2529 /* String+Localization.swift */; };
+		BF8CF3ED202E173D002A6B6E /* LimeConfig.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF8CF3E8202E170B002A6B6E /* LimeConfig.framework */; };
+		BF8CF3F0202E1749002A6B6E /* LimeConfig.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF8CF3EA202E170B002A6B6E /* LimeConfig.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		BF08C23F20246FE800EC2529 /* PBXContainerItemProxy */ = {
+		BF8CF3E7202E170B002A6B6E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = BF08C23A20246FE800EC2529 /* LimeCore.xcodeproj */;
+			containerPortal = BF8CF3E1202E170B002A6B6E /* LimeConfig.xcodeproj */;
 			proxyType = 2;
-			remoteGlobalIDString = BF08C1D320244FC700EC2529;
-			remoteInfo = "LimeCore iOS";
+			remoteGlobalIDString = BFAD5AAA202CC31A0044937B;
+			remoteInfo = "LimeConfig iOS";
 		};
-		BF08C24120246FE800EC2529 /* PBXContainerItemProxy */ = {
+		BF8CF3E9202E170B002A6B6E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = BF08C23A20246FE800EC2529 /* LimeCore.xcodeproj */;
+			containerPortal = BF8CF3E1202E170B002A6B6E /* LimeConfig.xcodeproj */;
 			proxyType = 2;
-			remoteGlobalIDString = BF08C1E32024503500EC2529;
-			remoteInfo = "LimeCore watchOS";
+			remoteGlobalIDString = BFAD5AD3202CC63F0044937B;
+			remoteInfo = "LimeConfig watchOS";
 		};
-		BF08C24320246FF700EC2529 /* PBXContainerItemProxy */ = {
+		BF8CF3EB202E1737002A6B6E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = BF08C23A20246FE800EC2529 /* LimeCore.xcodeproj */;
+			containerPortal = BF8CF3E1202E170B002A6B6E /* LimeConfig.xcodeproj */;
 			proxyType = 1;
-			remoteGlobalIDString = BF08C1E22024503500EC2529;
-			remoteInfo = "LimeCore watchOS";
+			remoteGlobalIDString = BFAD5AA9202CC31A0044937B;
+			remoteInfo = "LimeConfig iOS";
 		};
-		BF08C24520246FFF00EC2529 /* PBXContainerItemProxy */ = {
+		BF8CF3EE202E1745002A6B6E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = BF08C23A20246FE800EC2529 /* LimeCore.xcodeproj */;
+			containerPortal = BF8CF3E1202E170B002A6B6E /* LimeConfig.xcodeproj */;
 			proxyType = 1;
-			remoteGlobalIDString = BF08C1D220244FC700EC2529;
-			remoteInfo = "LimeCore iOS";
+			remoteGlobalIDString = BFAD5AD2202CC63F0044937B;
+			remoteInfo = "LimeConfig watchOS";
 		};
 /* End PBXContainerItemProxy section */
 
@@ -65,11 +65,11 @@
 		BF08C22F20246A6200EC2529 /* LocalizationProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalizationProvider.swift; sourceTree = "<group>"; };
 		BF08C23220246AE300EC2529 /* LocalizationConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizationConfiguration.swift; sourceTree = "<group>"; };
 		BF08C23420246CC900EC2529 /* Cartfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Cartfile; sourceTree = "<group>"; };
-		BF08C23A20246FE800EC2529 /* LimeCore.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = LimeCore.xcodeproj; path = "Carthage/Checkouts/swift-lime-core/LimeCore.xcodeproj"; sourceTree = "<group>"; };
 		BF08C24C2024752100EC2529 /* LocalizationTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizationTable.swift; sourceTree = "<group>"; };
 		BF08C24F202478D400EC2529 /* String+Localization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Localization.swift"; sourceTree = "<group>"; usesTabs = 0; };
 		BF0946C52029FC65002F76A6 /* LimeLocalization.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = LimeLocalization.podspec; sourceTree = "<group>"; };
 		BF0946C62029FCA5002F76A6 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BF8CF3E1202E170B002A6B6E /* LimeConfig.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = LimeConfig.xcodeproj; path = "Carthage/Checkouts/swift-lime-config/LimeConfig.xcodeproj"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,7 +77,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BF08C24A2024732F00EC2529 /* LimeCore.framework in Frameworks */,
+				BF8CF3ED202E173D002A6B6E /* LimeConfig.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,7 +85,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BF08C24B2024736F00EC2529 /* LimeCore.framework in Frameworks */,
+				BF8CF3F0202E1749002A6B6E /* LimeConfig.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -141,18 +141,9 @@
 		BF08C23920246FD100EC2529 /* Dependencies */ = {
 			isa = PBXGroup;
 			children = (
-				BF08C23A20246FE800EC2529 /* LimeCore.xcodeproj */,
+				BF8CF3E1202E170B002A6B6E /* LimeConfig.xcodeproj */,
 			);
 			name = Dependencies;
-			sourceTree = "<group>";
-		};
-		BF08C23B20246FE800EC2529 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				BF08C24020246FE800EC2529 /* LimeCore.framework */,
-				BF08C24220246FE800EC2529 /* LimeCore.framework */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 		BF08C247202470CA00EC2529 /* Frameworks */ = {
@@ -169,6 +160,15 @@
 				BF0946C52029FC65002F76A6 /* LimeLocalization.podspec */,
 			);
 			path = Deploy;
+			sourceTree = "<group>";
+		};
+		BF8CF3E2202E170B002A6B6E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BF8CF3E8202E170B002A6B6E /* LimeConfig.framework */,
+				BF8CF3EA202E170B002A6B6E /* LimeConfig.framework */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -205,7 +205,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				BF08C24620246FFF00EC2529 /* PBXTargetDependency */,
+				BF8CF3EC202E1737002A6B6E /* PBXTargetDependency */,
 			);
 			name = "LimeLocalization iOS";
 			productName = LimeLocalization;
@@ -224,7 +224,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				BF08C24420246FF700EC2529 /* PBXTargetDependency */,
+				BF8CF3EF202E1745002A6B6E /* PBXTargetDependency */,
 			);
 			name = "LimeLocalization watchOS";
 			productName = LimeLocalization;
@@ -262,8 +262,8 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
-					ProductGroup = BF08C23B20246FE800EC2529 /* Products */;
-					ProjectRef = BF08C23A20246FE800EC2529 /* LimeCore.xcodeproj */;
+					ProductGroup = BF8CF3E2202E170B002A6B6E /* Products */;
+					ProjectRef = BF8CF3E1202E170B002A6B6E /* LimeConfig.xcodeproj */;
 				},
 			);
 			projectRoot = "";
@@ -275,18 +275,18 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		BF08C24020246FE800EC2529 /* LimeCore.framework */ = {
+		BF8CF3E8202E170B002A6B6E /* LimeConfig.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
-			path = LimeCore.framework;
-			remoteRef = BF08C23F20246FE800EC2529 /* PBXContainerItemProxy */;
+			path = LimeConfig.framework;
+			remoteRef = BF8CF3E7202E170B002A6B6E /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		BF08C24220246FE800EC2529 /* LimeCore.framework */ = {
+		BF8CF3EA202E170B002A6B6E /* LimeConfig.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
-			path = LimeCore.framework;
-			remoteRef = BF08C24120246FE800EC2529 /* PBXContainerItemProxy */;
+			path = LimeConfig.framework;
+			remoteRef = BF8CF3E9202E170B002A6B6E /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -336,15 +336,15 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		BF08C24420246FF700EC2529 /* PBXTargetDependency */ = {
+		BF8CF3EC202E1737002A6B6E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = "LimeCore watchOS";
-			targetProxy = BF08C24320246FF700EC2529 /* PBXContainerItemProxy */;
+			name = "LimeConfig iOS";
+			targetProxy = BF8CF3EB202E1737002A6B6E /* PBXContainerItemProxy */;
 		};
-		BF08C24620246FFF00EC2529 /* PBXTargetDependency */ = {
+		BF8CF3EF202E1745002A6B6E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = "LimeCore iOS";
-			targetProxy = BF08C24520246FFF00EC2529 /* PBXContainerItemProxy */;
+			name = "LimeConfig watchOS";
+			targetProxy = BF8CF3EE202E1745002A6B6E /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
