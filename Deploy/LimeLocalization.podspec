@@ -14,6 +14,11 @@ Pod::Spec.new do |s|
   s.watchos.deployment_target = '2.0'
   # Sources
   s.source_files = 'Source/*.swift'
-  s.dependency 'LimeCore'
+  
+  # LimeCore >= 0.9.4 also contains LimeCore/Localization, so this deprecated pod must target older version
+  s.dependency 'LimeCore', '< 0.9.4'
   s.dependency 'LimeConfig'
+  
+  s.deprecated = true
+  s.deprecated_in_favor_of = 'LimeCore/Localization'
 end
