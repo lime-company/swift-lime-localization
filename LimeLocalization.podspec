@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name = 'LimeLocalization'
-  s.version = '0.9.4'
+  s.version = '0.9.99'
   # Metadata
   s.license = { :type => 'Apache License, Version 2.0', :file => 'LICENSE' }
   s.summary = 'Yet another localization framework written in swift'
