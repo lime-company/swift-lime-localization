@@ -15,4 +15,5 @@ Pod::Spec.new do |s|
   # Sources
   s.source_files = 'Source/*.swift'
   s.dependency 'LimeCore'
+  s.dependency 'LimeConfig'
 end
