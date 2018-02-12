@@ -1,3 +1,6 @@
 # swift-lime-localization
 
-Simple localization framework written in swift
+This library is now deprecated. Please use following pod as replacement:
+```
+pod 'LimeCore/Localization'
+```
